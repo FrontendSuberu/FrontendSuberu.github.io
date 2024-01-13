@@ -1,0 +1,15 @@
+.skills p,li{
+    color: white;
+    font-size: var(--sizes-xs);
+}
+
+.skills{
+    margin-top: 1rem;
+    padding-top: 90px;
+    text-align: center;
+}
+
+.skills ul li span{
+    margin-left: 0.5rem;
+    font-weight: 400;
+}

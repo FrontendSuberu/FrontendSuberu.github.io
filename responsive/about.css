@@ -1,0 +1,48 @@
+.about-txt{
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 2rem;
+    letter-spacing: 0.002rem;
+}
+
+.about-txt div p{
+    font-size: var(--sizes-sm);
+    color: white;
+}
+
+
+/* img area */
+.about-img{
+    position: relative;
+    left: 30%;
+    width: 30%;
+}
+
+.img-frame{
+    width: var(--sizes-10xl);
+    height: var(--sizes-10xl);
+    border-radius: 50%;
+    border: 1px solid red;
+    background-image: url(../images/Joeboy2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:top center;
+    animation: face 4s ease-in-out infinite;
+}
+
+@keyframes face {
+    0%{
+        background-image: url(../images/Joeboy2.jpg);
+    
+    }
+
+    50%{
+    background-image: url(../images/Joe.jpg);
+    }
+    
+    100%{
+        background-image: url(../images/Joeboy2.jpg);
+    }
+}

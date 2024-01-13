@@ -1,0 +1,84 @@
+/* header flow */
+header{
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    padding-block: 1rem;
+    justify-content: space-around;
+}
+
+/* nav ul */
+.navlinks ul{
+    display: flex;
+    /* gap: 10p; */
+}
+
+
+/* logo */
+.logo a{
+    color: white;
+    font-size: var(--sizes-xxs);
+}
+
+.logo a p::first-letter{
+    font-weight: 800;
+    color: var(--clr-rose);
+}
+
+
+
+/* nav list */
+.navlinks ul li{
+    display: none;
+    font-size: var(--sizes-xxs);
+    padding-inline: 0.3rem;
+}
+
+
+/* anchors */
+.navlinks ul li a{
+    position: relative;
+    color: white;
+}
+
+/* before effect */
+.navlinks ul li a::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    transition: all 0.3s ease-in-out;
+    height: 2px;
+    bottom: -0.14rem;
+    background: var(--clr-rose);
+}
+
+.navlinks ul li a:hover::before{
+    width: 100%;
+}
+
+
+/* options holding menu and moon toggle */
+.options{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.toggle svg{
+    scale: 0.46;
+}
+
+
+.menu{
+    transition: 0.1s ease-in-out;
+    padding: 0.34rem;
+    border-radius: 50%;
+}
+
+.contact a button{
+    display: none;
+}
+
+.navbtn{
+    scale: 0.6;
+}
+

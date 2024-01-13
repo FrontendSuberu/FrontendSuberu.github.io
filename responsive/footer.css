@@ -1,0 +1,13 @@
+footer{
+    font-size: var(--sizes-sm);
+    color: white;
+}
+footer h1{
+    text-align: center;
+    color: var(--clr-section-h1)
+}
+.media{
+    justify-content: center;
+    display: flex;
+    gap: 0.4rem;
+}
